@@ -1,3 +1,6 @@
+/* ----------------------------
+   Base Desktop Styles (Original)
+-----------------------------*/
 .app {
   width: 100%;
   min-height: 100vh;
@@ -124,4 +127,106 @@
   border-radius: 6px;
   margin-top: 4px;
   font-size: 14px;
+}
+
+/* ---------------------------------
+   Responsive Design (Added Section)
+----------------------------------*/
+
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .app {
+    padding: 20px;
+  }
+
+  .feed-container {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .post-card {
+    padding: 12px;
+  }
+
+  .caption {
+    font-size: 14px;
+  }
+
+  .like-btn,
+  .comment-btn {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .feed-container {
+    width: 100%;
+  }
+
+  .post-card {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .post-time {
+    font-size: 11px;
+  }
+
+  .caption {
+    font-size: 13px;
+  }
+
+  .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .post-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .like-btn,
+  .comment-btn {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .comment-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .comment-section input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+
+  .comment-text {
+    font-size: 13px;
+  }
 }
