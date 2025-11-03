@@ -1,7 +1,6 @@
 {
   "name": "my-social-feed",
   "private": true,
-  "homepage": "https://Hasitha-Kaluarachchi.github.io/my-social-feed",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
